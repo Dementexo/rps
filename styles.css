@@ -1,0 +1,55 @@
+.webPageContainer{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    background-color:lightgray;
+    justify-content:center;
+    align-items:center;
+
+}
+.rpsHeader{
+    display:flex;
+    margin-bottom:6%;
+    margin-top:15%;
+    border-color:black;
+    border-style:solid;
+    border-radius:3%;
+    width:30vw;
+    justify-content:center;
+}
+.rpsHeaderText{
+    font-size:1vw;
+    color:black;
+    padding:5%;
+    width:100%;
+}
+.choices{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    width:60%;
+    aspect-ratio:40/9;
+    padding:5%;
+    margin-bottom:15%;
+}
+.choiceRock{
+    flex:auto;
+    max-width:20%;
+    margin-left:5%;
+    margin-right:5%;
+    aspect-ratio:1/1;
+}
+.choicePaper{
+    flex:auto;
+    max-width:20%;
+    margin-left:5%;
+    margin-right:5%;
+    aspect-ratio:1/1;
+}
+.choiceScissors{
+    flex:auto;
+    max-width:20%;
+    margin-left:5%;
+    margin-right:5%;
+    aspect-ratio:1/1;
+}
