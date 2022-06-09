@@ -35,6 +35,7 @@
 .choiceRock{
     flex:auto;
     max-width:20%;
+    max-height:100%;
     margin-left:5%;
     margin-right:5%;
     aspect-ratio:1/1;
@@ -49,6 +50,7 @@
 .choiceScissors{
     flex:auto;
     max-width:20%;
+    max-height:100%;
     margin-left:5%;
     margin-right:5%;
     aspect-ratio:1/1;
