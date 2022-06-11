@@ -27,6 +27,14 @@ function rockSelect_Play(){
     playerSelection = "rock";
     playRound();
 }
+function paperSelect_play(){
+    playerSelection = "paper";
+    playRound();
+}
+function scissorsSelect_play(){
+    playerSelection = "scissors";
+    playRound();
+}
 
 function playRound(){
     let computerSelection = computerPlay();
@@ -71,6 +79,8 @@ function playRound(){
             }
         }
     }
+    document.getElementById("playerScore").innerHTML = playerScore;
+    document.getElementById("computerScore").innerHTML = computerScore;
     if (playerScore == 3 || computerScore == 3){
         if (playerScore == 3){
             console.log("Player wins!")
@@ -81,10 +91,12 @@ function playRound(){
     }
 }
 function gameStart(){
-    console.log("Welcome to Rock, Paper, Scissors! Please pick a choice for your first turn.")
+    console.log("Welcome to Rock, Paper, Scissors! Please pick a choice for your first turn.");
     playerScore = 0;
     computerScore = 0;
     choiceRock.addEventListener('click', rockSelect_Play);
+    choicePaper.addEventListener('click', paperSelect_play);
+    choiceScissors.addEventListener('click', scissorsSelect_play);
 }
 
 startButton.addEventListener('click', gameStart);
