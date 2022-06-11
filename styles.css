@@ -1,7 +1,6 @@
 .webPageContainer{
     display:flex;
     flex-direction:column;
-    height:97vh;
     width:100%;
     background-color:rgb(49, 49, 49);
     justify-content:center;
@@ -19,33 +18,34 @@
     justify-content:center;
 }
 .rpsHeaderText{
-    font-size:1vw;
+    font-size:1em;
     color:rgb(200, 200, 200);
     padding:5%;
     width:100%;
 }
-.hr{
-    color:black;
+.startBC{
+    display:flex;
+    width:100%;
+}
+#startButton{
+    object-fit:contain;
+    max-width:20%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:5%;
+}
+#startButton:hover{
+    transform: scale(1.15);
 }
 .choices{
     display:flex;
     flex-direction:row;
     justify-content:space-around;
-    width:45%;
-    aspect-ratio:40/9;
-    padding:5%;
-    margin-bottom:15%;
+    width:50%;
+    margin-top:8%;
+    margin-bottom:8%;
 }
-.choiceRock{
-    flex:auto;
-    object-fit:contain;
-    max-width:20%;
-    max-height:100%;
-    margin-left:5%;
-    margin-right:5%;
-    aspect-ratio:1/1;
-}
-.choicePaper{
+#choiceRock{
     flex:auto;
     object-fit:contain;
     max-width:20%;
@@ -53,11 +53,77 @@
     margin-right:5%;
     aspect-ratio:1/1;
 }
-.choiceScissors{
+#choiceRock:hover{
+    transform: scale(1.15)
+}
+#choicePaper{
     flex:auto;
     object-fit:contain;
     max-width:20%;
     margin-left:5%;
     margin-right:5%;
     aspect-ratio:1/1;
+}
+#choicePaper:hover{
+    transform: scale(1.15)
+}
+#choiceScissors{
+    flex:auto;
+    object-fit:contain;
+    max-width:20%;
+    margin-left:5%;
+    margin-right:5%;
+    aspect-ratio:1/1;
+}
+#choiceScissors:hover{
+    transform: scale(1.15)
+}
+.scores{
+    display:flex;
+    justify-content:space-around;
+    margin-left:auto;
+    margin-right:auto;
+    width:60%;
+    margin-bottom:5%;
+}
+.playerScoreBox{
+    border-style:solid;
+    color:rgb(200, 200, 200);
+    width:15%;
+}
+.computerScoreBox{
+    border-style:solid;
+    color:rgb(200, 200, 200);
+    width:15%;
+}
+.psbHeader{
+    margin-top:15%;
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    color:rgb(200, 200, 200)
+}
+.csbHeader{
+    margin-top:15%;
+    width:fit-content;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:0.9em;
+    color:rgb(200, 200, 200)
+}
+#playerScore{
+    margin-top:30%;
+    margin-bottom:20%;
+    margin-left:auto;
+    margin-right:auto;
+    width:fit-content;
+    color:rgb(200, 200, 200)
+}
+#computerScore{
+    margin-top:30%;
+    margin-bottom:20%;
+    margin-left:auto;
+    margin-right:auto;
+    width:fit-content;
+    color:rgb(200, 200, 200)
 }

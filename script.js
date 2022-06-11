@@ -1,85 +1,90 @@
 let computerScore = 0;
 let playerScore = 0;
-let tempPlayerInput;
+let startButton = document.getElementById('startButton');
+let choiceRock = document.getElementById('choiceRock');
+let choicePaper = document.getElementById('choicePaper');
+let choiceScissors = document.getElementById('choiceScissors');
+let playerSelection;
+let roundCounter = 0;
+let gameWinner = false;
 
-game();
-
-function computerPlay(mainChoice){
+function computerPlay(){
     let decider=Math.floor(Math.random()*10);
     if (decider <= 3){
-        mainChoice="rock";
+        let mainChoice="rock";
         return mainChoice;
     }
     else if (decider >= 3 && decider <= 6){
-        mainChoice = "paper";
+        let mainChoice = "paper";
         return mainChoice;
     }
     else if (decider >= 6 && decider <= 9){
-        mainChoice = "scissors";
+        let mainChoice = "scissors";
         return mainChoice;
     }
 }
+function rockSelect_Play(){
+    playerSelection = "rock";
+    playRound();
+}
 
 function playRound(){
-    let playerSelection = prompt();
     let computerSelection = computerPlay();
-    let playerTurn=playerSelection.toLowerCase();
-    tempPlayerInput = playerTurn;
-    if(playerTurn == "rock"){
-        if(computerSelection == "rock"){
-            console.log("You both chose rock, tie!");
+    if (playerScore != 3 && computerScore != 3){
+        if(playerSelection == "rock"){
+            if(computerSelection == "rock"){
+                console.log("You both chose rock, tie!");
+            }
+            else if(computerSelection == "paper"){
+                console.log("You chose rock and the computer chose paper, you lose!")
+                ++computerScore;
+            }
+            else if(computerSelection == "scissors"){
+                console.log("You chose rock and the computer chose scissors, you win!");
+                ++playerScore;
+            }
         }
-        else if(computerSelection == "paper"){
-            console.log("You chose rock and the computer chose paper, you lose!");
-            ++computerScore;
+        if(playerSelection == "paper"){
+            if(computerSelection == "paper"){
+                console.log("You both chose paper, tie!");
+            }
+            else if(computerSelection == "scissors"){
+                console.log("You chose paper while the computer chose scissors, you lose!");
+                ++computerScore;
+            }
+            else if(computerSelection == "rock"){
+                console.log("You chose paper while the computer chose rock, you win!");
+                ++playerScore;
+            }
         }
-        else if(computerSelection == "scissors"){
-            console.log("You chose rock and the computer chose scissors, you win!");
-            ++playerScore;
+        if(playerSelection == "scissors"){
+            if(computerSelection == "scissors"){
+                console.log("You both chose scissors, tie!");
+            }
+            else if(computerSelection == "rock"){
+                console.log("You chose scissors while the computer chose rock, you lose!");
+                ++computerScore;
+            }
+            else if(computerSelection == "paper"){
+                console.log("You chose scissors while the computer chose paper, you win!");
+                ++playerScore;
+            }
         }
     }
-    if(playerTurn == "paper"){
-        if(computerSelection == "paper"){
-            console.log("You both chose paper, tie!");
+    if (playerScore == 3 || computerScore == 3){
+        if (playerScore == 3){
+            console.log("Player wins!")
         }
-        else if(computerSelection == "scissors"){
-            console.log("You chose paper while the computer chose scissors, you lose!");
-            ++computerScore;
-        }
-        else if(computerSelection == "rock"){
-            console.log("You chose paper while the computer chose rock, you win!");
-            ++playerScore;
+        else if (computerScore == 3){
+            console.log("Computer wins!")
         }
     }
-    if(playerTurn == "scissors"){
-        if(computerSelection == "scissors"){
-            console.log("You both chose scissors, tie!");
-        }
-        else if(computerSelection == "rock"){
-            console.log("You chose scissors while the computer chose rock, you lose!");
-            ++computerScore;
-        }
-        else if(computerSelection == "paper"){
-            console.log("You chose scissors while the computer chose paper, you win!");
-            ++playerScore;
-        }
-    }
+}
+function gameStart(){
+    console.log("Welcome to Rock, Paper, Scissors! Please pick a choice for your first turn.")
+    playerScore = 0;
+    computerScore = 0;
+    choiceRock.addEventListener('click', rockSelect_Play);
 }
 
-function game(){
-    console.log("Welcome to rock, paper, scissors! You will be fighting against the computer.")
-    for (i=0; i=5;){
-        playRound();
-        if (computerPlay() != tempPlayerInput){
-            ++i;
-        }
-        if (computerScore >= 3){
-            console.log("The computer wins! You lose HAHAHAHAHA!")
-            break;
-        }
-        else if (playerScore >= 3){
-            console.log("You win, that's cool... I guess.")
-            break;
-        }
-    }
-}
+startButton.addEventListener('click', gameStart);

@@ -15,11 +15,25 @@
                 <h2>Best out of 5 rounds wins, good luck!</h2>
             </div>
         </div>
-        <hr class="hr" style="color:rgb(200, 200, 200);width:50%;">
+        <div class="startBC">
+            <input type="image" id = "startButton" src = images/Start-Button-Vector-PNG-Images.png>
+        </div>
+        <hr class="hr" style="width:60%;color:rgb(200, 200, 200);">
         <div class = "choices">
-            <input type ="image" class = "choiceRock" src = images/1443228.png></input>
-            <input type ="image" class = "choicePaper" src = images/8cxner5Ki.png></input>
-            <input type ="image" class = "choiceScissors" src = images/ATbKBx55c.png></input>
+            <input type ="image" id = "choiceRock" src = images/1443228.png></input>
+            <input type ="image" id = "choicePaper" src = images/8cxner5Ki.png></input>
+            <input type ="image" id = "choiceScissors" src = images/ATbKBx55c.png></input>
+        </div>
+        <div class="scores">
+            <div class="playerScoreBox">
+                <div class="psbHeader">Player's Score:</div>
+                <div id="playerScore">?</div>
+            </div>
+            <div class="computerScoreBox">
+                <div class="csbHeader">Computer's Score:</div>
+                <div id="computerScore">?</div>
+            </div>
+            <script src = "script.js"></script>
         </div>
     </div>
 </body>
