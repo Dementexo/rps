@@ -5,20 +5,45 @@
     background-color:rgb(49, 49, 49);
     justify-content:center;
     align-items:center;
-
+}
+.navBar{
+    background-color: rgb(35, 35, 35);
+    display:flex;
+    width:100%;
+    height:10vh;
+    justify-content:center;
+    align-items:center;
+}
+#rpsFacts{
+    flex:auto;
+    color:rgb(200, 200, 200);
+    font-size:1.2em;
+}
+#rpsFactsText{
+    margin-left:4vw;
+}
+#gitHubLink{
+    display:flex;
+    flex-direction:row-reverse;
+    flex:auto;
+    color:rgb(200, 200, 200);
+}
+#profileLink{
+    color:rgb(200, 200, 200);
+    margin-right:4vw;
 }
 .rpsHeader{
     display:flex;
     margin-bottom:6%;
-    margin-top:15%;
+    margin-top:8%;
     border-color:rgb(200, 200, 200);
     border-style:solid;
     border-radius:3%;
     width:30vw;
     justify-content:center;
 }
-.rpsHeaderText{
-    font-size:1em;
+#rpsHeaderText{
+    font-size:0.8em;
     color:rgb(200, 200, 200);
     padding:5%;
     width:100%;
@@ -95,6 +120,12 @@
     border-style:solid;
     color:rgb(200, 200, 200);
     width:15%;
+}
+#announcementBox{
+    margin-top:auto;
+    margin-bottom:auto;
+    color:rgb(200, 200, 200);
+    visibility:hidden;
 }
 .psbHeader{
     margin-top:15%;

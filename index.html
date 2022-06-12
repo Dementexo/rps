@@ -9,8 +9,18 @@
 </head>
 <body>
     <div class = "webPageContainer">
+        <div class = "navBar">
+            <div id = "rpsFacts">
+                <div id = "rpsFactsText">RPS Facts (coming soon)</div>
+            </div>
+            <div id = "gitHubLink">
+                <a id = "profileLink" href = "https://github.com/Dementexo">
+                    <img src = images/GitHub-Mark-Light-32px.png>
+                </a>
+            </div>
+        </div>
         <div class = "rpsHeader">
-            <div class = "rpsHeaderText">
+            <div id = "rpsHeaderText">
                 <h1>Welcome to Rock, Paper, Scissors!</h1>
                 <h2>Best out of 5 rounds wins, good luck!</h2>
             </div>
@@ -27,11 +37,14 @@
         <div class="scores">
             <div class="playerScoreBox">
                 <div class="psbHeader">Player's Score:</div>
-                <div id="playerScore">?</div>
+                <div id="playerScore">0</div>
+            </div>
+            <div id="announcementBox">
+                Let the game begin!
             </div>
             <div class="computerScoreBox">
                 <div class="csbHeader">Computer's Score:</div>
-                <div id="computerScore">?</div>
+                <div id="computerScore">0</div>
             </div>
             <script src = "script.js"></script>
         </div>
