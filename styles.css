@@ -9,8 +9,6 @@
     width:100%;
     height:auto;
     background-color:rgb(49, 49, 49);
-    justify-content:center;
-    align-items:center;
 }
 .navBar{
     background-color: rgb(35, 35, 35);
@@ -45,6 +43,8 @@
     border-radius:3%;
     width:50vw;
     justify-content:center;
+    margin-left:auto;
+    margin-right:auto;
 }
 #rpsHeaderText{
     font-size:1vw;
@@ -70,10 +70,12 @@
     flex-direction:row;
     justify-content:space-around;
     width:50%;
+    margin-left:auto;
+    margin-right:auto;
 }
 #choiceRock{
     flex:auto;
-    object-fit:cover;
+    object-fit:contain;
     max-width:20%;
     margin-left:5%;
     margin-right:5%;
@@ -95,7 +97,7 @@
 }
 #choiceScissors{
     flex:auto;
-    object-fit:cover;
+    object-fit:contain;
     max-width:20%;
     margin-left:5%;
     margin-right:5%;
@@ -109,6 +111,8 @@
     width:40%;
     justify-content:center;
     align-items:center;
+    margin-left:auto;
+    margin-right:auto;
 }
 .playerScoreBox{
     border-style:solid;
