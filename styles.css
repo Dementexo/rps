@@ -35,11 +35,11 @@
 }
 .rpsHeader{
     display:flex;
-    margin-bottom:6%;
     border-color:rgb(200, 200, 200);
     border-style:solid;
     border-radius:3%;
     width:50vw;
+    margin-bottom:4vh;
     justify-content:center;
 }
 #rpsHeaderText{
@@ -54,10 +54,11 @@
 }
 #startButton{
     object-fit:contain;
-    max-width:20%;
+    max-width:15%;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:5%;
+    margin-bottom:5vh;
+    margin-top:5vh;
 }
 #startButton:hover{
     transform: scale(1.15);
@@ -67,8 +68,8 @@
     flex-direction:row;
     justify-content:space-around;
     width:50%;
-    margin-top:8%;
-    margin-bottom:8%;
+    margin-top:5vh;
+    margin-bottom:5vh;
 }
 #choiceRock{
     flex:auto;
@@ -106,7 +107,7 @@
 .scores{
     display:flex;
     width:40%;
-    margin-top:5%;
+    margin-top:5vh;
     justify-content:center;
     align-items:center;
 }
