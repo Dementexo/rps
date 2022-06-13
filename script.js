@@ -97,7 +97,7 @@ function playRound(){
         }
         else if (computerScore == 3){
             console.log("Computer wins!")
-            document.getElementById("announcementBox").innerHTML = "You lost! Better luck next time";
+            document.getElementById("announcementBox").innerHTML = "You lost! Better luck next time.";
         }
     }
 }
