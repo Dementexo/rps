@@ -1,7 +1,7 @@
 .webPageContainer{
     display:flex;
     flex-direction:column;
-    width:100%;
+    min-width:100%;
     background-color:rgb(49, 49, 49);
     justify-content:center;
     align-items:center;
@@ -13,7 +13,7 @@
     height:10vh;
     justify-content:center;
     align-items:center;
-    margin-bottom:25vh;
+    margin-bottom:50vh;
 }
 #rpsFacts{
     flex:auto;
@@ -39,8 +39,9 @@
     border-style:solid;
     border-radius:3%;
     width:50vw;
-    margin-bottom:4vh;
+    margin-bottom:10vw;
     justify-content:center;
+    position:relative;
 }
 #rpsHeaderText{
     font-size:1vw;
@@ -51,14 +52,14 @@
 .startBC{
     display:flex;
     width:100%;
+    position:relative;
+    margin-bottom:5vw;
 }
 #startButton{
     object-fit:contain;
     max-width:15%;
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:5vh;
-    margin-top:5vh;
 }
 #startButton:hover{
     transform: scale(1.15);
@@ -68,8 +69,8 @@
     flex-direction:row;
     justify-content:space-around;
     width:50%;
-    margin-top:5vh;
-    margin-bottom:5vh;
+    position:relative;
+    margin-top:5vw;
 }
 #choiceRock{
     flex:auto;
@@ -105,11 +106,12 @@
     transform: scale(1.15)
 }
 .scores{
+    position:relative;
     display:flex;
     width:40%;
-    margin-top:5vh;
     justify-content:center;
     align-items:center;
+    margin-top:10vh;
 }
 .playerScoreBox{
     border-style:solid;
@@ -126,8 +128,8 @@
 #announcementBox{
     margin-top:auto;
     margin-bottom:auto;
-    margin-left:10%;
-    margin-right:10%;
+    margin-left:3vw;
+    margin-right:3vw;
     color:rgb(200, 200, 200);
     font-size:1vw;
     visibility:hidden;
@@ -164,9 +166,9 @@
 }
 .creditFooter{
     width:100%;
-    margin-top:25vh;
     display:flex;
     background-color:rgb(35, 35, 35);
+    margin-top:40vh;
 }
 #footerText{
     margin-left:auto;
