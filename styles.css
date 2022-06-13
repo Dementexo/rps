@@ -13,7 +13,7 @@
     height:10vh;
     justify-content:center;
     align-items:center;
-    margin-bottom:50vh;
+    margin-bottom:25vh;
 }
 #rpsFacts{
     flex:auto;
@@ -168,7 +168,7 @@
     width:100%;
     display:flex;
     background-color:rgb(35, 35, 35);
-    margin-top:40vh;
+    margin-top:20vh;
 }
 #footerText{
     margin-left:auto;
