@@ -17,12 +17,12 @@
     height:8vh;
     justify-content:center;
     align-items:center;
-    margin-bottom:200px;
+    margin-bottom:150px;
 }
 #rpsFacts{
     flex:auto;
     color:rgb(200, 200, 200);
-    font-size:1.2em;
+    font-size:1em;
 }
 #rpsFactsText{
     margin-left:4vw;
@@ -119,7 +119,7 @@
 }
 .scores{
     display:flex;
-    width:40%;
+    width:50%;
     justify-content:center;
     align-items:center;
     margin-left:auto;
@@ -127,50 +127,56 @@
 }
 .playerScoreBox{
     border-style:solid;
+    border-width:thin;
     flex:auto;
+    display:flex;
     color:rgb(200, 200, 200);
     font-size:1.5vw;
 }
 .computerScoreBox{
     border-style:solid;
+    border-width:thin;
     flex:auto;
+    display:flex;
     color:rgb(200, 200, 200);
     font-size:1.5vw;
 }
 #announcementBox{
-    margin-left:30px;
-    margin-right:30px;
+    margin-left:3%;
+    margin-right:3%;
     color:rgb(200, 200, 200);
-    font-size:1vw;
     visibility:hidden;
+    font-size:2vw;
 }
 .psbHeader{
-    margin-top:15%;
+    margin-top:auto;
+    margin-bottom:auto;
     width:fit-content;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:1vw;
+    margin-right:2vw;
     color:rgb(200, 200, 200)
 }
 .csbHeader{
-    margin-top:15%;
+    margin-top:auto;
+    margin-bottom:auto;
     width:fit-content;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left:1vw;
+    margin-right:2vw;
     color:rgb(200, 200, 200)
 }
 #playerScore{
-    margin-top:30%;
-    margin-bottom:20%;
+    margin-top:1vw;
+    margin-bottom:1vw;
     margin-left:auto;
-    margin-right:auto;
+    margin-right:1vw;
     width:fit-content;
     color:rgb(200, 200, 200)
 }
 #computerScore{
-    margin-top:30%;
-    margin-bottom:20%;
+    margin-top:1vw;
+    margin-bottom:1vw;
     margin-left:auto;
-    margin-right:auto;
+    margin-right:1vw;
     width:fit-content;
     color:rgb(200, 200, 200)
 }
@@ -178,7 +184,7 @@
     width:100%;
     display:flex;
     background-color:rgb(35, 35, 35);
-    margin-top:200px;
+    margin-top:150px;
 }
 #footerText{
     margin-left:auto;
